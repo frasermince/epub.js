@@ -404,7 +404,7 @@ class ContinuousViewManager extends DefaultViewManager {
 
 		this._onScroll = this.onScroll.bind(this);
 		scroller.addEventListener("scroll", this._onScroll);
-		this._scrolled = debounce(this.scrolled.bind(this), 30);
+		this._scrolled = debounce(this.scrolled.bind(this), 750);
 		// this.tick.call(window, this.onScroll.bind(this));
 
 		this.didScroll = false;
